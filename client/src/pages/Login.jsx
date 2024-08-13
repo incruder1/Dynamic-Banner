@@ -17,7 +17,7 @@ const Login = () => {
       if (email == "Test@test.com" || password === "Test") {
         localStorage.setItem("token", "token123");
 
-        navigate("/");
+        navigate("/dashboard");
       }
       else {
         setError("Please Correct Email and Password as given below");
