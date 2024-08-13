@@ -19,7 +19,7 @@ app.use(cors());
 app.use(bodyParser.json());
 const connectionString =
   "postgresql://postgres:pqNjVnDCOahVJwrwRhkgkLlspDeEICbn@monorail.proxy.rlwy.net:43207/railway";
-
+  app.use(express.static(path.join(__dirname, "./client/build")));
 const pool = new Pool(
   {
     connectionString: connectionString,
